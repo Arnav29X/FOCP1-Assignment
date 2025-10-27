@@ -6,7 +6,7 @@ used in digital verification systems*/
 #include <math.h>
 
 int main(){
-    int number, n_copy, count = 0, remainder;
+    int number, n_copy, count = 0, rem;
     double sum = 0;
 
     printf("Enter to check if the number is ARMSTRONG : ");
@@ -24,8 +24,8 @@ int main(){
 
     while (n_copy != 0)
     {
-        remainder = n_copy % 10;
-        sum += pow(remainder,count);
+        rem = n_copy % 10;
+        sum += pow(rem,count);
         n_copy /= 10;
     }
 
