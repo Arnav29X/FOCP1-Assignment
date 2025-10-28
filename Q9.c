@@ -15,7 +15,9 @@ int main(){
 
     for (i = 0; i < n; i++) {
         if (arr[i] == 99) break;
-        else return 1;
+        else {
+            return printf("Array does not contain 99!");
+        }
     }
 
     printf("99's first occurence in this array is at index %d or position %d", i, i+1);
